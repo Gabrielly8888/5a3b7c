@@ -8,7 +8,7 @@ Saída   : relatorio upxdown.html
 import json
 import re
 import unicodedata
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import numpy as np
@@ -807,7 +807,8 @@ payload_json = json.dumps(payload, ensure_ascii=False)
 # ══════════════════════════════════════════════════════════════════════
 # Data/hora de geração do relatório
 # ══════════════════════════════════════════════════════════════════════
-dt_atualizacao = datetime.now().strftime("%d/%m/%Y às %H:%M")
+FUSO_BRASILIA = timezone(timedelta(hours=-3))
+dt_atualizacao = datetime.now(FUSO_BRASILIA).strftime("%d/%m/%Y às %H:%M")
 
 # ══════════════════════════════════════════════════════════════════════
 # HTML
