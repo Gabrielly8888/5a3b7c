@@ -9,7 +9,9 @@ on:
       - '**.py'
       - '**.xlsx'
       - '**.csv'
+      - 'requirements.txt'
       - '.github/workflows/**'
+  workflow_dispatch: {}
 
 jobs:
   build:
