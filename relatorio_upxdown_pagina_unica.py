@@ -840,13 +840,13 @@ body{background:var(--bg);font-family:'Segoe UI',Arial,sans-serif;color:var(--in
 #page-exec{padding-top:28px}
 
 /* COVER */
-.cover{min-height:520px;background:linear-gradient(135deg,#0F2444 0%,#1E3A5F 55%,#0EA5E9 130%);padding:48px 64px;color:#fff;display:flex;flex-direction:column;position:relative;overflow:hidden}
+.cover{min-height:260px;background:linear-gradient(135deg,#0F2444 0%,#1E3A5F 55%,#0EA5E9 130%);padding:28px 48px;color:#fff;display:flex;flex-direction:column;position:relative;overflow:hidden}
 .cover::before{content:"";position:absolute;width:700px;height:700px;border-radius:50%;border:1px solid rgba(255,255,255,.06);right:-180px;top:-200px}
 .cover-brand{font-size:15px;font-weight:700;opacity:.7;letter-spacing:.5px;display:flex;align-items:center;gap:8px}
 .cover-brand-dot{width:8px;height:8px;background:var(--cyan);border-radius:50%}
-.cover h1{font-size:72px;line-height:.94;font-weight:200;letter-spacing:-2px;margin-top:62px}
+.cover h1{font-size:40px;line-height:1.05;font-weight:200;letter-spacing:-1px;margin-top:20px}
 .cover h1 b{font-weight:800;color:var(--cyan)}
-.cover-sub{margin-top:22px;max-width:560px;font-size:17px;line-height:1.6;color:rgba(255,255,255,.65)}
+.cover-sub{margin-top:14px;max-width:560px;font-size:14px;line-height:1.5;color:rgba(255,255,255,.65)}
 .cover-update{font-size:15px;color:#ffffff;letter-spacing:.3px;display:flex;align-items:center;gap:8px}
 .cover-update::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--cyan)}
 .home-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:52px;max-width:920px}
@@ -1037,14 +1037,14 @@ table.dt .r{text-align:right}
 @media (max-width:900px){
   .main{padding:0 14px 20px}
   #page-home{margin-left:-14px;margin-right:-14px}
-  .cover{min-height:460px;padding:34px 28px}
-  .cover h1{font-size:54px;margin-top:54px}
-  .cover-sub{font-size:15px}
+  .cover{min-height:220px;padding:24px 22px}
+  .cover h1{font-size:32px;margin-top:16px}
+  .cover-sub{font-size:13px}
   .kpis{grid-template-columns:repeat(2,1fr)}
   .grid2,.grid3,.ic-grid{grid-template-columns:1fr}
 }
 @media (max-width:560px){
-  .cover h1{font-size:44px}
+  .cover h1{font-size:28px}
   .kpis{grid-template-columns:1fr}
   .hero-top{align-items:flex-start;flex-direction:column}
   .filter{width:100%}
@@ -1064,7 +1064,7 @@ table.dt .r{text-align:right}
   <div class="cover-brand"><div class="cover-brand-dot"></div>digisac</div>
   <h1>Relatório<br><b>Up × Down</b></h1>
   <p class="cover-sub">Painel executivo para acompanhar expansão, redução, saldo operacional, impacto financeiro, produtos críticos e motivos de downgrade.</p>
-  <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-top:auto;padding-top:60px">
+  <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-top:auto;padding-top:24px">
     <div class="home-foot">ikatec</div>
     <div class="cover-update">Atualizado: __DT_ATUALIZACAO__</div>
   </div>
@@ -1143,7 +1143,7 @@ table.dt .r{text-align:right}
     </div>
     <div id="execFaixaVida"></div>
   </div>
-  <div class="grid2" style="align-items:stretch">
+  <div class="grid2" style="align-items:stretch;grid-template-columns:1fr">
     <div class="card" style="margin-bottom:0">
       <h3>Tabela mensal — Quantidade</h3>
       <div class="table-wrap"><div id="tblMensalQtd"></div></div>
